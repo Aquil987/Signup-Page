@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="borderBox">
+                <div class="left-box">
+                    <form onsubmit="">
+                        <h1>Sign in</h1>
+                    <div class="social-icon">
+                        <a href="#" class="icons"><i class="fa-brands fa-facebook-f "></i></a>
+                        <a href="#" class="icons"><i class="fa-brands fa-google-plus-g "></i></a>
+                        <a href="#" class="icons"><i class="fa-brands fa-linkedin-in "></i></a>
+                        
+                        
+                        
+                    </div>
+                    <p>or use your account</p>
+                    <input type="email" placeholder="Email" id="email"/><br>
+                    <input type="password" placeholder="Password" id="password" required/><br>
+                    <a href="#">Forget your Password?</a><br>
+                    <button>SIGN IN</button>
+                    </form>
+                </div>
+                <div class="rgt-box">
+                <span>Hello, Friends!</span>
+                <p>Enter your personal details and start journey with us. </p>
+                <button id="sign-up">SIGN UP</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+</body>
+<script>  
+    function validateform(){  
+        let username = document.querySelector("#email");
+        let password = document.querySelector("#password");
+      
+    if (username==null || username==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+    }  
+    </script>  
+</html>
